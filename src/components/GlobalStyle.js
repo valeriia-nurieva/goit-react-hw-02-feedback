@@ -1,6 +1,7 @@
-@import-normalize;
-/* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
+export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 15px;
@@ -40,3 +41,4 @@ img {
   width: 100%;
   height: auto;
 }
+`;

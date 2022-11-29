@@ -23,7 +23,7 @@ function renderIcon(param) {
     case 'bad':
       return <BsEmojiFrownFill fill={`${theme.colors.red}`} />;
     default:
-      return '';
+      throw new Error('Unexpected value of option');
   }
 }
 
