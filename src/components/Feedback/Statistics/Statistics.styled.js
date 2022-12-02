@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StatisticsFeedback = styled.p`
-  width: 100%;
+  width: 130px;
   text-align: center;
   font-weight: 600;
   border: 2px dashed ${({ theme }) => `${theme.colors.accent}`};

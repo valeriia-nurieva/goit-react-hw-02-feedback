@@ -5,16 +5,15 @@ import { StatisticsFeedback, StatisticsCount } from './Statistics.styled';
 const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
     <>
-      <Box display="flex" gridGap="10px" mb="2">
+      <Box display="flex" gridGap="10px" mb="3">
         <StatisticsFeedback>Good: {good}</StatisticsFeedback>
         <StatisticsFeedback>Neutral: {neutral}</StatisticsFeedback>
         <StatisticsFeedback>Bad: {bad}</StatisticsFeedback>
       </Box>
-      <Box display="flex" justifyContent="space-between">
-      <StatisticsCount>Total: {total}</StatisticsCount>
-      <StatisticsCount>Positive Feedback: {percentage}%</StatisticsCount>
+      <Box display="flex" gridGap="10px">
+        <StatisticsCount>Total: {total}</StatisticsCount>
+        <StatisticsCount>Positive Feedback: {percentage}%</StatisticsCount>
       </Box>
-
     </>
   );
 };
