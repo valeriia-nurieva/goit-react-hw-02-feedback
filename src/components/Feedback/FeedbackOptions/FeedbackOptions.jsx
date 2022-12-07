@@ -4,9 +4,9 @@ import { BsEmojiSmileFill, BsEmojiNeutralFill, BsEmojiFrownFill } from 'react-ic
 import { theme } from 'theme';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  return options.map((option, idx) => {
+  return options.map((option) => {
     return (
-      <Button key={idx} onClick={() => onLeaveFeedback(option)} type="button">
+      <Button key={option} onClick={() => onLeaveFeedback(option)} type="button">
         {renderIcon(option)}
         {capitalizeFirstLetter(option)}
       </Button>
